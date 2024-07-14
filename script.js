@@ -17,7 +17,7 @@ function createProjektEintrag(repoName) {
     const projektBeschreibungElement = document.createElement('p');
      projektBeschreibungElement.classList.add('projekt-beschreibung');
      // Hier die Beschreibung einfügen (z.B. mit `projektBeschreibungElement.textContent = "Beschreibungstext";`)
-
+    projektBeschreibungElement.textContent = repoName.beschreibung; // Beschreibung aus dem Objekt verwenden
     
     const projektNameElement = document.createElement('span');
     projektNameElement.classList.add('projekt-name');
