@@ -25,6 +25,7 @@ function createProjektEintrag(repoName) {
 
     projektEintrag.appendChild(projektNameElement);
     projektEintrag.appendChild(projektLinkElement);
+    projektEintrag.appendChild(projektBeschreibungElement); // Beschreibungselement hinzufügen
 
     return projektEintrag;
 }
