@@ -14,7 +14,7 @@ header {
 h1::before {
   content: attr(data-name) 'Patrick Albert Wiedenmann';
   font-weight: bold; /* Fette Schrift */
-  color: #333; /* Graue Farbe */
+  color: #b20b00; /* Graue Farbe */
 }
 
 h1 {
