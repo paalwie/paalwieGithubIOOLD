@@ -2,7 +2,12 @@ const projekteListe = document.querySelector('.projekte ul');
 
 // GitHub-Benutzername und Repository-Liste ersetzen
 const benutzername = "paalwie";
-const repositories = ["alteIOSeite", "datenbankonline", "Netzplan"]; // Weitere Repos hinzufügen
+const repositories = [
+  { name: "alteIOSeite", beschreibung: "Meine alte iOS-App-Entwicklung" },
+  { name: "datenbankonline", beschreibung: "Online-Datenbank-Anwendung" },
+  { name: "Netzplan", beschreibung: "Tool zur Erstellung von Netzwerkplänen" },
+  // ... weitere Repos mit Beschreibungen hinzufügen
+];
 
 // Funktion zum Erstellen eines Projektlisteneintrags
 function createProjektEintrag(repoName) {
