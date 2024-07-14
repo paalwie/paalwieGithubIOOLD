@@ -11,6 +11,10 @@ header {
   text-align: center;
 }
 
+h1::before {
+  content: attr(data-name) 's '; /* Füge deinen Namen und ein Leerzeichen hinzu */
+}
+
 h1 {
   font-family: 'Roboto Slab', serif; /* Serifenschrift für Überschrift */
   font-size: 2.5em;
