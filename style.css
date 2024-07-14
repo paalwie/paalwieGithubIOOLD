@@ -1,37 +1,85 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Arial', sans-serif; /* Wähle eine Standardschriftart */
+  background-color: #f5f5f5; /* Heller Hintergrund */
+  color: #333; /* Dunkle Textfarbe für gute Lesbarkeit */
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: #333; /* Dunkler Header für Kontrast */
+  color: #fff; /* Weiße Textfarbe im Header */
   padding: 20px;
-}
-
-h1 {
   text-align: center;
 }
 
+h1 {
+  font-family: 'Roboto Slab', serif; /* Serifenschrift für Überschrift */
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
 .projekte {
-  margin: 20px;
+  margin: 20px auto; /* Zentriere den Projektcontainer */
+  max-width: 800px; /* Begrenze die Breite für Responsivität */
 }
 
 .projekt {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
+  background-color: #fff; /* Weiße Hintergrundfarbe für Projekte */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtiler Schatten */
+  border-radius: 5px; /* Abgerundete Ecken */
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .projekt-name {
-  font-weight: bold;
+  font-size: 1.2em; /* Größere Schriftgröße für Projektnamen */
+  margin-bottom: 10px;
 }
 
 .projekt-link {
+  display: inline-block; /* Inline-Block für Links */
+  padding: 5px 10px; /* Polsterung um Linktext */
+  border: 1px solid transparent; /* Transparenter Rand */
   text-decoration: none;
-  color: #007bff;
+  color: #007bff; /* Blauer Linktext */
+  transition: color 0.3s ease; /* Übergang beim Hover */
+}
+
+.projekt-link:hover {
+  color: #0056b3; /* Dunklerer Linktext beim Hover */
 }
 
 .projekt-beschreibung {
-  margin-top: 5px;
-  font-size: 0.9em;
-  color: #666;
+  line-height: 1.6; /* Mehr Zeilenabstand für bessere Lesbarkeit */
+}
+
+.projekt:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stärkerer Schatten beim Hover */
+}
+
+.projekt-link:hover {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Schatten für Linktext */
+}
+
+.projekt-beschreibung {
+  animation: fadeIn 0.5s ease-in-out; /* Einfache Fade-In-Animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .projekte {
+    flex-direction: column; /* Spaltenanordnung auf mobilen Geräten */
+  }
+
+  .projekt {
+    width: 100%; /* Volle Breite auf mobilen Geräten */
+    margin-bottom: 15px; /* Geringerer Abstand zwischen Projekten */
+  }
 }
