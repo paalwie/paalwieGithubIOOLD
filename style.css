@@ -26,6 +26,15 @@ h1 {
 h1 {
   display: flex; /* Aktiviere Flexbox-Layout */
   justify-content: center; /* Zentriere den Inhalt horizontal */
+  align-items: center; /* Zentriere den Inhalt vertikal */
+}
+
+.name {
+  font-weight: bold; /* Fette Schrift für den Namen */
+}
+
+.title {
+  margin-left: 10px; /* Abstand zwischen Name und Titel */
 }
 
 .projekte {
